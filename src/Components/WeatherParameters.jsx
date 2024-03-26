@@ -3,7 +3,6 @@ import { Col, Container, Row } from "react-bootstrap";
 export const WeatherParameters = (element) => {
   console.log(element.element.day.maxtemp_c);
   console.log(element.element.date);
-  //temperature , humidity , wind speed , forcast
   return (
     <Container className="mt-5 mb-5 h-100 ">
     <Row>Date : {element.element.date}</Row>
