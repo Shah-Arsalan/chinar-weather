@@ -14,7 +14,6 @@ export const MainContainer = () => {
     try{
         setLoading(prev => !prev)
         const response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=ef8b89c0be4c4de89d4103910242603&q=${city}&days=4&aqi=yes&alerts=no`);
-        console.log(response.data.forecast.forecastday);
         const weatherConditions = response.data.forecast.forecastday;
         setWeather(weatherConditions);
         setLoading(prev => !prev)

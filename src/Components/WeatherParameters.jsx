@@ -1,8 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 
 export const WeatherParameters = (element) => {
-  console.log(element.element.day.maxtemp_c);
-  console.log(element.element.date);
   return (
     <Container className="mt-5 mb-5 h-100 ">
     <Row className="text-primary ms-1">Date : {element.element.date}</Row>
