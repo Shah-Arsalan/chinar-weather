@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 export const WeatherParameters = (element) => {
   return (
     <Container className="mt-5 mb-5 h-100 ">
-    <Row className="text-primary ms-1">Date : {element.element.date}</Row>
+    <Row className="ms-1">Date : {element.element.date}</Row>
     <Row  className="mt-4">
       <Col>
         <Container className="shadow-lg p-3 h-100 w-80 ">
@@ -17,7 +17,6 @@ export const WeatherParameters = (element) => {
         <h4>{element.element.day.avgtemp_c}° C</h4>
         <p>Avg Temperature</p>
         
-            
         </Container>
       </Col>
       <Col>
