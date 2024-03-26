@@ -30,6 +30,12 @@ export const MainContainer = () => {
 
   }
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      clickHandler();
+    }
+  };
+
   return (
     <div>
       <div className="d-flex justify-content-center align-items-center gap-3 mt-5">
@@ -38,6 +44,7 @@ export const MainContainer = () => {
           value={city}
           onChange={(e) => setCity(e.target.value)}
           placeholder="Enter city name ..."
+          onKeyDown={handleKeyDown}
         ></input>
         <Button onClick={clickHandler}>Get Forcast ➣</Button>
       </div>
