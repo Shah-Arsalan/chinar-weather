@@ -5,7 +5,7 @@ export const WeatherParameters = (element) => {
   console.log(element.element.date);
   return (
     <Container className="mt-5 mb-5 h-100 ">
-    <Row>Date : {element.element.date}</Row>
+    <Row className="text-primary ms-1">Date : {element.element.date}</Row>
     <Row  className="mt-4">
       <Col>
         <Container className="shadow-lg p-3 h-100 w-80 ">
@@ -31,7 +31,7 @@ export const WeatherParameters = (element) => {
       </Col>
       <Col>
         <Container className="shadow-lg p-3 h-100 w-80 flex-column d-flex align-items-center justify-content-center">
-        <h4>{element.element.day.maxwind_kph}° kmph</h4>
+        <h4>{element.element.day.maxwind_kph} kmph</h4>
         <p>Max Wind Speed</p>
             
         </Container>
